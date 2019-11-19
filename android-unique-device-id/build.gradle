@@ -27,8 +27,7 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.core:core-ktx:1.1.0'
     testImplementation 'junit:junit:4.12'
@@ -36,10 +35,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 }
 
-
-def getVersionName = { ->
-    return "0.0.1"
-}
 
 def getArtifactId = { ->
     return "android-unique-device-id"
@@ -49,8 +44,8 @@ publishing {
     publications {
         bar(MavenPublication) {
             groupId 'cesarferreira'
+            version "0.0.1"
             artifactId getArtifactId()
-            version getVersionName()
             artifact("$buildDir/outputs/aar/${getArtifactId()}-release.aar")
         }
     }
