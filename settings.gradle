@@ -1,0 +1,3 @@
+rootProject.name='android-unique-device-id'
+include ':app'
+include ':library'
