@@ -1,9 +1,8 @@
 package cesarferreira.androiduniquedeviceid.sample
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import cesarferreira.androiduniquedeviceid.DeviceUniqueKeyGenerator
-import cesarferreira.androiduniquedeviceid.sample.R
 import kotlinx.android.synthetic.main.activity_main.textView
 import org.koin.android.ext.android.inject
 
