@@ -13,5 +13,5 @@
 .externalNativeBuild
 .cxx
 .idea/
-/library/build/
+/android-unique-device-id/build/
 /sample/build/

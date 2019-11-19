@@ -48,7 +48,7 @@ def getArtifactId = { ->
 publishing {
     publications {
         bar(MavenPublication) {
-            groupId 'cesarferreira.android-unique-device-id'
+            groupId 'cesarferreira'
             artifactId getArtifactId()
             version getVersionName()
             artifact("$buildDir/outputs/aar/${getArtifactId()}-release.aar")

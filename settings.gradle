@@ -1,4 +1,4 @@
 rootProject.name='android-unique-device-id'
 
 include ':sample'
-include ':library'
+include ':android-unique-device-id'
