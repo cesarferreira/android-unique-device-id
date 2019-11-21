@@ -1,16 +1,21 @@
-# android-unique-device-id
+# Unique Device Id Provider
 
 > It's quite complex to have a way to get an unique identifier on android that's compatible with all android versions as you can see [here](https://stackoverflow.com/questions/2785485/is-there-a-unique-android-device-id) 
 
 
 ### Notice
-- This approach doest need any android permissions
+- This approach doesn't need any android permissions
 - if you wipe the app data it will generate a new unique ID
 
 ## Usage
 
 ```kotlin
-DeviceUniqueKeyGenerator().getUniqueId() // ca705d9b-0598-4f75-b71a-973934160055
+
+// create it or provide it with a DI framework
+val idProvider = UniqueDeviceIdProvider(context) 
+
+// retrieve the unique key
+idProvider.getUniqueId() // ca705d9b-0598-4f75-b71a-973934160055
 ```
 
 ## Install

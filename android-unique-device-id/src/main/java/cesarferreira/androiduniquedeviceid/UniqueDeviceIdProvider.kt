@@ -3,12 +3,12 @@ package cesarferreira.androiduniquedeviceid
 import android.content.Context
 import java.util.UUID
 
-class DeviceUniqueKeyGenerator(private val context: Context) {
+class UniqueDeviceIdProvider(private val context: Context) {
 
     private var uniqueID: String? = null
 
     companion object {
-        private const val PREF_UNIQUE_ID = "PREF_UNIQUE_ID"
+        private const val PREF_UNIQUE_ID = "PREF_UNIQUE_DEVICE_ID"
     }
 
     @Synchronized

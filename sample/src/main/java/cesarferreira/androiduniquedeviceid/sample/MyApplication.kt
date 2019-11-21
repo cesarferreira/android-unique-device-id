@@ -1,7 +1,7 @@
 package cesarferreira.androiduniquedeviceid.sample
 
 import android.app.Application
-import cesarferreira.androiduniquedeviceid.DeviceUniqueKeyGenerator
+import cesarferreira.androiduniquedeviceid.UniqueDeviceIdProvider
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
@@ -16,7 +16,7 @@ class MyApplication : Application() {
             androidLogger()
             androidContext(this@MyApplication)
             modules(module {
-                single { DeviceUniqueKeyGenerator(get()) }
+                single { UniqueDeviceIdProvider(get()) }
             })
         }
     }
