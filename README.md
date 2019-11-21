@@ -24,7 +24,7 @@ Latest version = [![Download](https://api.bintray.com/packages/cesarferreira/mav
 
 ```groovy
 dependencies {
-  implementation 'com.github.cesarferreira:xxxxxxxx:+'
+  implementation 'com.github.cesarferreira:android-unique-device-id:0.0.3'
 }
 ```
 
