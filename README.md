@@ -12,11 +12,11 @@
 
 ```kotlin
 
-// create it or provide it with a DI framework
+// create it (or provide it with a DI framework)
 val idProvider = UniqueDeviceIdProvider(context) 
 
-// retrieve the unique key
-idProvider.getUniqueId() // ca705d9b-0598-4f75-b71a-973934160055
+idProvider.getUniqueId() 
+  // => ca705d9b-0598-4f75-b71a-973934160055
 ```
 
 ## Install
