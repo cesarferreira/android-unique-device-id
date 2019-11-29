@@ -2,10 +2,11 @@
 
 > It's quite complex to have a way to get an unique identifier on android that's compatible with all android versions as you can see [here](https://stackoverflow.com/questions/2785485/is-there-a-unique-android-device-id) 
 
+### Keep in mind
 
-### Notice
-- This approach doesn't need any android permissions
-- if you wipe the app data it will generate a new unique ID
+> This approach doesn't need any android permissions
+
+> if you wipe the app data it will generate a new unique ID
 
 ## Usage
 
@@ -23,8 +24,17 @@ idProvider.getUniqueId() // ca705d9b-0598-4f75-b71a-973934160055
 Latest version = [![Download](https://api.bintray.com/packages/cesarferreira/maven/tempo/images/download.svg) ](https://bintray.com/cesarferreira/maven/tempo/_latestVersion) -->
 
 ```groovy
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+
+```groovy
 dependencies {
-  implementation 'com.github.cesarferreira:android-unique-device-id:0.0.3'
+  implementation 'com.github.cesarferreira:android-unique-device-id:1.0.0'
 }
 ```
 

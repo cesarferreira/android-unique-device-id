@@ -43,7 +43,7 @@ def getArtifactId = { ->
 publishing {
     publications {
         bar(MavenPublication) {
-            groupId 'cesarferreira'
+            groupId 'cesarferreira.libraries'
             version "0.0.1"
             artifactId getArtifactId()
             artifact("$buildDir/outputs/aar/${getArtifactId()}-release.aar")
