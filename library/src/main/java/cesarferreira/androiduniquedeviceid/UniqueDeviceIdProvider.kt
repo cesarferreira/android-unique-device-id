@@ -15,7 +15,7 @@ class UniqueDeviceIdProvider(private val context: Context) {
     fun getUniqueId(): String {
         if (uniqueID == null) {
             val sharedPrefs = context.getSharedPreferences(PREF_UNIQUE_ID, Context.MODE_PRIVATE)
-            uniqueID = sharedPrefs.getString(PREF_UNIQUE_ID, null)
+            uniqueID = sharedPrefs.getString(PREF_UNIQUE_ID, "")
             if (uniqueID == null) {
                 uniqueID = UUID.randomUUID().toString()
                 val editor = sharedPrefs.edit()
@@ -23,6 +23,6 @@ class UniqueDeviceIdProvider(private val context: Context) {
                 editor.apply()
             }
         }
-        return uniqueID ?: ""
+        return uniqueID as String
     }
 }
