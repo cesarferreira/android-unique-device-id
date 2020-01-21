@@ -34,7 +34,7 @@ allprojects {
 
 ```groovy
 dependencies {
-  implementation 'com.github.cesarferreira:android-unique-device-id:1.0.1'
+  implementation 'com.github.cesarferreira:android-unique-device-id:1.0.2'
 }
 ```
 
